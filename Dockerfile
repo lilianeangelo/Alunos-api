@@ -9,4 +9,4 @@ RUN dotnet restore Alunos.csproj
 RUN dotnet build -c Release -o out Alunos.csproj
 
 
-CMD ["dotnet", "out/SeuApp.dll"]
+CMD ["dotnet", "out/Alunos.dll"]
