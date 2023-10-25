@@ -1,5 +1,10 @@
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
-COPY ./app /app
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+
+WORKDIR /app
+
+COPY . .
+
 RUN dotnet restore
-RUN dotnet publish -c Release -o out
+RUN dotnet build -c Release -o out
+
 CMD ["dotnet", "out/SeuApp.dll"]
