@@ -6,7 +6,6 @@ COPY . .
 
 RUN dotnet restore Alunos_Backup.csproj
 RUN dotnet restore Alunos.csproj
-RUN dotnet build -c Release -o out Alunos_Backup.csproj
 RUN dotnet build -c Release -o out Alunos.csproj
 
 
